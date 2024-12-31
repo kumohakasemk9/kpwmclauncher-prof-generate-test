@@ -64,6 +64,7 @@ jobs:
            git commit -m "Auto-Generate Nebula Distribution" -a
           else
            echo "It looks like primary task failed and commit won't be proceed!"
+           exit 1
           fi
 
       - name: Git push changes
