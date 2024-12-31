@@ -56,7 +56,7 @@ jobs:
       - name: Git commit files
         working-directory: ./packs
         run: |
-          if [ ! -f distribution.json ]; then
+          if [ -f distribution.json ]; then
            git config --local user.email "action@github.com"
            git config --local user.name "GitHub Action"
            git add -f distribution.json
